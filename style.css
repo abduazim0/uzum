@@ -1,0 +1,456 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: sans-serif;
+    font-weight: 300; */
+}
+
+.container{
+    width: 88%;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.shopping{
+    position:relative;
+    text-align: right;
+}
+.shopping img{
+    width: 23px;
+}
+.shopping span{
+    background: red;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    position: absolute;
+    top: -5px;
+    left: 80%;
+    padding: 3px 10px;
+}
+/* navbar */
+.navbar{
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    padding: 10px 0;
+}
+.nav2{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.nav2-button{
+    border-radius: 4px;
+    padding: 12px 25px;
+    border: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+    font-weight: 500;
+    text-align: center;
+    background: #ececf7;
+    color: #7000ff;
+}
+.nav3{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 14px;
+}
+.input{
+    font-size: 14px;
+    padding: 0px 10px;
+    width: 450px;
+    border: 1px solid rgb(194, 194, 194);
+    border-right: none;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    outline: none;
+    height: 43px;
+}
+.example{
+    display: flex;
+}
+  form.example button {
+    padding: 10px 30px;
+    color: gray;
+    border: 1px solid grey;
+    border-left: none;
+    cursor: pointer;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+.nav-icon{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+
+
+
+.w3-section{
+    width: 100%;
+    margin: 50px 0;
+  }
+  .w3-section img{
+    width: 100%;
+    height: 55vh;
+    border-radius: 15px;
+  }
+
+  .arzon h2{
+    font-size: 28px;
+    font-weight: 800;
+  }
+  .arzon a{
+    text-decoration: none;
+    color: black;
+    display: flex;
+    padding: 35px 0 20px 0;
+  }
+.cardd {
+    width: 100%;
+    border-radius: 8px;
+    height: max-content;
+    transition: 0.4s ease;
+  }
+  .cardd:hover{
+    -webkit-box-shadow: 0px 0px 10px 2px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 0px 0px 10px 2px rgba(34, 60, 80, 0.2);
+    box-shadow: 0px 0px 10px 2px rgba(34, 60, 80, 0.2);
+}
+  .cardd img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  .cardd h1 {
+    font-size: 15px;
+    font-weight: 400;
+    padding: 5px 0 5px 6px;
+  }
+  .cardd h2 {
+    margin-left: 6px;
+    font-size: 11.5px;
+    background: rgb(255, 255, 0);
+  font-weight: 400;
+  border-radius: 4px;
+  margin-right: 2px;
+  margin-top: 2px;
+  width: max-content;
+  padding: 0 5px;
+  }
+  .cardd h3 {
+    text-decoration: line-through;
+    font-size: .8rem;
+    font-weight: 400;
+    margin-left: 6px;
+    margin-top: 20px;
+    color: gray;
+  }
+  .cardd h4 {
+    font-size: .975rem;
+    font-weight: 500;
+    margin-left: 6px;
+    margin-top: 2px;
+    padding-bottom: 7px;
+  }
+  .karzina{
+    display: flex;
+    justify-content: space-between;
+  }
+  .karzina button{
+    background: transparent;
+    border: none;
+  }
+  .karzina-icon button{
+border: 1px solid rgb(255, 255, 0);
+border-radius: 6px;
+padding: 5px 10px;
+margin-right: 5px;
+margin-top: 25px;
+transition: 0.5s ease;
+  }
+
+
+  .karzina-icon button:hover{
+    border: 1px solid rgb(223, 223, 61);
+      }
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.list{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+.card{
+    position: fixed;
+    top:0;
+    left: 100%;
+    width: 500px;
+    background-color: #453E3B;
+    height: 100vh;
+    transition: 0.5s;
+}
+.active .card{
+    left: calc(100% - 500px);
+}
+.active .container{
+   transform: translateX(-200px);
+}
+.card h1{
+    color: #E8BC0E;
+    font-weight: 100;
+    margin: 0;
+    padding: 0 20px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+}
+.card .checkOut{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+}
+.card .checkOut div{
+    background-color: #E8BC0E;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    cursor: pointer;
+}
+.card .checkOut div:nth-child(2){
+    background-color: #1C1F25;
+    color: #fff;
+}
+.listCard li{
+    display: grid;
+    grid-template-columns: 100px repeat(3, 1fr);
+    color: #fff;
+    row-gap: 10px;
+}
+.listCard li div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.listCard li img{
+    width: 90%;
+}
+.listCard li button{
+    background-color: #fff5;
+    border: none;
+}
+.listCard .count{
+    margin: 0 10px;
+}
+.total{
+    color: white;
+    font-weight: 300;
+}
+.totall{
+    color: white;
+    font-weight: 300;
+}
+.tex-t{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+            .dropbtn {
+                color: black;
+                padding: 12px 40px;
+                font-size: 16px;
+                border: none;
+                border-radius: 8px;
+                cursor: pointer;
+              }
+              
+             
+              .dropdown {
+                position: relative;
+                display: inline-block;
+              }
+              
+             
+              .dropdown-content {
+                display: none;
+                position: absolute;
+                background-color: #f9f9f9;
+                box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                z-index: 1;
+              }
+              
+            
+              .dropdown-content a {
+                color: black;
+                padding: 12px 16px;
+                text-decoration: none;
+                display: block;
+              }
+              
+             
+              .dropdown-content a:hover {background-color: #f1f1f1;
+            }
+              
+            
+              .dropdown:hover .dropdown-content {
+                text-align: center;
+                border: 1px solid black;
+                display: block;
+              }
+              
+           
+
+
+              #lowest-discount-btn{
+                margin: 10px 0;
+                font-size: 13px;
+                background: transparent;
+                border: none;
+              }
+              #highest-discount-btn{
+                margin: 0 0 10px 0;
+                font-size: 13px;
+                background: transparent;
+                border: none;
+              }
+
+
+
+
+
+
+
+/* Dark mode stili */
+.dark-mode {
+  background-color: #1f1f1f; 
+  color: #ffffff; 
+}
+
+.mode-toggle{
+  display: flex;
+  gap: 18px;
+}
+
+#dark-mode-toggle {
+  margin: 5px 0 5px 5px;
+  font-size: 13px;
+  background: transparent;
+  border: none;
+}
+#light-mode-toggle {
+  margin: 5px 5px 5px 0;
+  font-size: 13px;
+  background: transparent;
+  border: none;
+}
+
+
+
+
+
+.add-to-cart-button {
+  background-color: #ffffff; 
+  color: #1f1f1f;
+}
+
+
+.dark-mode .add-to-cart-button {
+  background-color: #1f1f1f; 
+  color: #ffffff; 
+}
+
+
+    /* Light mode uchun */
+    #welcomeText {
+      color: #1f1f1f; /* Qora yozuv rangi */
+  }
+
+  /* Dark mode uchun */
+  .dark-mode #welcomeText {
+      color: #ffffff; /* Oq yozuv rangi */
+  }
+
+
+      /* Light mode uchun */
+      .titlee {
+        color: #1f1f1f; /* Qora yozuv rangi */
+    }
+
+    /* Dark mode uchun */
+    .dark-mode .titlee {
+        color: #1f1f1f; /* Oq yozuv rangi */
+    }
+
+.mods{
+  display: flex;
+  gap: 30px;
+}
